@@ -44,8 +44,8 @@ OBJECTFILES= \
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=-m64 -Wfatal-errors -Wall -Wextra -pedantic -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wfloat-equal -Wshadow -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wsign-conversion -Wlogical-op -Wmissing-declarations -Wmissing-noreturn -Wmissing-format-attribute -Wpacked -Wredundant-decls -Wunreachable-code -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wstack-protector
-CXXFLAGS=-m64 -Wfatal-errors -Wall -Wextra -pedantic -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wfloat-equal -Wshadow -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wsign-conversion -Wlogical-op -Wmissing-declarations -Wmissing-noreturn -Wmissing-format-attribute -Wpacked -Wredundant-decls -Wunreachable-code -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wstack-protector
+CCFLAGS=-m64 -Wfatal-errors -Wall -Wextra -pedantic -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wswitch-default -Wfloat-equal -Wshadow -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wsign-conversion -Wlogical-op -Wmissing-declarations -Wmissing-noreturn -Wmissing-format-attribute -Wpacked -Wredundant-decls -Wunreachable-code -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wstack-protector -std=c++1y
+CXXFLAGS=-m64 -Wfatal-errors -Wall -Wextra -pedantic -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wswitch-default -Wfloat-equal -Wshadow -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wsign-conversion -Wlogical-op -Wmissing-declarations -Wmissing-noreturn -Wmissing-format-attribute -Wpacked -Wredundant-decls -Wunreachable-code -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wstack-protector -std=c++1y
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -69,17 +69,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibcsv.a: ${OBJECTFILES}
 ${OBJECTDIR}/src/CSV/CsvError.o: src/CSV/CsvError.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src/CSV
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Wall -s -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CSV/CsvError.o src/CSV/CsvError.cpp
+	$(COMPILE.cc) -O2 -Wall -s -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CSV/CsvError.o src/CSV/CsvError.cpp
 
 ${OBJECTDIR}/src/CSV/Record.o: src/CSV/Record.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src/CSV
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Wall -s -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CSV/Record.o src/CSV/Record.cpp
+	$(COMPILE.cc) -O2 -Wall -s -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CSV/Record.o src/CSV/Record.cpp
 
 ${OBJECTDIR}/src/CSV/Table.o: src/CSV/Table.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src/CSV
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Wall -s -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CSV/Table.o src/CSV/Table.cpp
+	$(COMPILE.cc) -O2 -Wall -s -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CSV/Table.o src/CSV/Table.cpp
 
 # Subprojects
 .build-subprojects:
